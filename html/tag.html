@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>제목</h1>
+    <h2>오늘의 일기</h2>
+    <h3>뜨리</h3>
+    <p>오늘은 수요일.<br><br/>어제는 화요일 볼링은 힘드러</p>
+    
+    <hr/>
+    
+    <h4>to do list</h4>
+    <!-- ul type 속서 값
+        - disc
+        - square
+        - circle
+        - none
+    -->
+    <ul type="circle">
+        <li>html 복습하기</li>
+        <li>세금계산서 수정발급</li>
+        <li>볼링연습</li>
+    </ul>
+
+    <h4>아아메 만드는 법</h4>
+    <!-- ol type 속서 값
+        - 1
+        - A
+        - a
+        - I
+        - i
+    -->
+    <ol type="A">
+        <li><b>샷</b>을 <strong>추출한다</strong></li>
+        <li><i>컵에</i> 얼음과 물을 붓는다</li>
+        <li><del>추출한</del> 샷을 &nbsp;&nbsp;&nbsp; <u>넣는다</u></li>
+    </ol>
+
+    <!-- 리스트 안에 리스트 넣기 -->
+    <h4>내가 좋아하는 음식</h4>
+    <ul>
+        <li>양식
+            <ol>
+                <li>감바스</li>
+                <li>스테이크</li>
+            </ol>
+        </li>
+        <li>한식
+            <ol>
+                <li>김치찌개</li>
+                <li>칰</li>
+            </ol>
+        </li>
+        <li>일식
+            <ol>
+                <li>초밥</li>
+                <li>덮밥텐동</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- detail & summary tag -->
+    <detail>
+        <summary>제목</summary>
+        <ul>
+            <li>아무태그나</li>
+            <li>넣으세요</li>
+        </ul>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima blanditiis dolorem asperiores, ipsam maxime at exercitationem, expedita alias voluptatum velit praesentium atque soluta qui mollitia et, doloribus deserunt! At.
+        </div>
+    </detail>
+
+
+    <h3>img & a 태그</h3>
+    <!-- img 속성
+        - src: 이미지 경로
+        - alt: 이미지 설명
+    -->
+
+    <!-- a 태그 속성
+        - href: 이동 경로
+        - target: 웹페이지가 열릴 위치
+        - title: a 태그에 대한 설명
+    -->
+
+    <img src="https://img.freepik.com/free-psd/portrait-of-an-adorable-golden-retriever-puppy_53876-73975.jpg"
+    alt="갱얼쥐" width="500">
+    <br/>
+
+    <!-- 절대경로와 상대경로
+        - 절대경로: 상단의 폴더부터 차례대로 경로를 찾는 것
+        - 상대경로: 현재 위치로부터 경로를 찾는 것
+    -->
+    <img src="/html/img/야옹.png" alt="야옹" width="400">
+    <br/>
+    <img src="./img/야옹.png" alt="야옹" width="300">
+
+    <a href="http://www.naver.com" target="_blank" title="mouse 커서를 올리면 나타나는 문장입니다.">네이버로 이동</a>
+    <br/>
+    <br/>
+    <br/>
+    <a href="/test/practice.html">카페메뉴(절대경로)</a>
+    <a href="../test/practice.html">카페메뉴(상대경로)</a>
+
+    <a href="http://www.google.com" target="_blank"><img src="img/푸바오.jpg"></a>
+
+</body>
+</html>
