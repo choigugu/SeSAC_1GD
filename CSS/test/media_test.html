@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+      @font-face {
+        font-family: "KyoboHandwriting2022khn";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KyoboHandwriting2022khn.woff2")
+          format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .font-link {
+        font-family: "Diphylleia", serif;
+      }
+
+      .font-import {
+        font-family: "Bagel Fat One", cursive;
+      }
+
+      body {
+        background-color: beige;
+      }
+      @media (min-width: 500px) {
+        body {
+          background-color: skyblue;
+        }
+      }
+      @media (max-width: 300px) {
+        body {
+          background-color: orange;
+        }
+      }
+      @media (max-height: 300px) {
+        p {
+          font-family: "Bagel Fat One", cursive;
+        }
+      }
+      @media (min-height: 500px) {
+        body {
+          background-color: greenyellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>미디어 쿼리 실습</p>
+  </body>
+</html>

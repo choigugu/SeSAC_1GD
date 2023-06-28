@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/979216f0c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      header {
+        width: 100%;
+        height: 60px;
+        background-color: lightblue;
+        position: fixed;
+      }
+
+      header .inner {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        background-color: lightblue;
+      }
+
+      header .inner i {
+        position: absolute;
+        font-size: 35px;
+        color: aliceblue;
+        line-height: 60px;
+      }
+
+      header .inner .menu {
+        display: flex;
+        justify-content: center;
+        line-height: 60px;
+      }
+
+      header .inner .menu li {
+        font-weight: 700;
+        margin-right: 15px;
+      }
+
+      header .small-menu {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          height: 60px;
+        }
+        header .inner .menu {
+          display: none;
+        }
+
+        header {
+          height: 60px;
+        }
+
+        header .inner i {
+          margin: 0 auto;
+          transform: translate(-50%);
+          line-height: 60px;
+        }
+
+        header .small-menu {
+          display: block;
+          background-color: aliceblue;
+        }
+
+        header .small-menu li {
+          height: 35px;
+          text-align: center;
+          line-height: 35px;
+        }
+
+        header .small-menu {
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <i class="fa-solid fa-igloo"></i>
+        <ul class="menu">
+          <li>메뉴1</li>
+          <li>메뉴2</li>
+          <li>메뉴3</li>
+          <li>메뉴4</li>
+        </ul>
+      </div>
+
+      <ul class="small-menu">
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+      </ul>
+    </header>
+  </body>
+</html>
