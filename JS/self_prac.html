@@ -9,18 +9,21 @@
       let txt = "문자";
       console.log(typeof Num, "isn't", typeof txt, "data type");
       console.log(
-        "typeof를 boolean이나 null에 사용하면" +
+        "typeof를 boolean 이나 null에 사용하면" +
           typeof null +
           "결과를 얻을 수 있습니다."
       );
 
-      let mathscore = prompt("수학 점수를 입력하세요");
+      console.log("----------");
+
+      let mathscore = prompt("수학 점수를 입력하세요.");
       let engscore = prompt("영어 점수를 입력하세요");
 
       mathscore = Number(mathscore);
       engscore = Number(engscore);
       avgscore = (mathscore + engscore) / 2;
-      console.log("평균점수 =" + avgscore + "점");
+
+      console.log("평균점수는 " + avgscore + "입니다.");
     </script>
   </head>
   <body></body>
