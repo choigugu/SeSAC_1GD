@@ -6,13 +6,13 @@ function 함수이름(매개변수){
 */
 helloWorld1();
 
-console.log("----------");
-
 function helloWorld1() {
   console.log("hello world1");
 }
 
 helloWorld1();
+
+console.log("----------");
 
 function helloWorld2() {
   return "hello world2";
@@ -24,6 +24,8 @@ helloWorld2();
 - 함수의 반환값, 함수 내부 코드의 '최종값'
 */
 console.log(helloWorld2());
+
+console.log("----------");
 
 function add(num1, num2) {
   console.log(num1 + num2);
