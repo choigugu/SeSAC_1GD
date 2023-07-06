@@ -86,14 +86,14 @@ if (number >= 20) {
 
 /* if문 중첩 */
 
-let usrId = "user";
+let userId = "user";
 let userPw = "1234!";
 
 function login() {
   let inputId = prompt("아이디를 입력해주세요!");
-  let inpuPw = promt("패스워드를 입력해주세요!");
+  let inputPw = promt("패스워드를 입력해주세요!");
 
-  if (usrId === inputId) {
+  if (userId === inputId) {
     if (userPw === inputPw) {
       alert("로그인 성공");
     } else {
@@ -160,6 +160,6 @@ if (now >= 12) {
   console.log("오전");
 }
 
-now >= 12 ? console.log("오후") : console.log("오후");
+now >= 12 ? console.log("오후") : console.log("오전");
 
 console.log("1" + 2 === 12);

@@ -10,10 +10,10 @@ console.log(myName);
 // 내 이름은 초이구요, 사는 곳은 seoul이에요
 console.log("내 이름은", myName, "이고요", "사는 곳은", mycity, "이에요");
 console.log("내 이름은" + myName + "이고요" + "사는 곳은" + mycity + "이에요");
-console.log(`내 이름은 $(myName)이고요, 사는 곳은 $(mycity)이에요`);
+console.log(`내 이름은 ${myName}이고요, 사는 곳은 ${mycity}이에요`);
 
 let myInfo1 = "내 이름은" + myName + "이고요" + "사는 곳은" + mycity + "이에요";
-let myInfo2 = `내 이름은 $(myName)이고요, 사는 곳은 $(mycity)이에요`;
+let myInfo2 = `내 이름은 ${myName}이고요, 사는 곳은 ${mycity}이에요`;
 
 // let MyInfo3 = "내 이름은", myName, "이고요", "사는 곳은", mycitiy, "이에요"
 // 쉼표를 이용해서 문자열을 연결하는 것은 안됩니다.
