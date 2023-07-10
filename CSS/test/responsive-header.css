@@ -28,11 +28,15 @@ header .inner {
 }
 
 /* LOGO */
-header .inner i {
+header .inner .logo {
   position: absolute;
   line-height: 100px;
   font-size: 50px;
   color: aliceblue;
+}
+
+header .inner .menu-bar {
+  display: none;
 }
 
 header .inner .menu {
@@ -55,30 +59,41 @@ header .small-menu {
   justify-content: center;
 }
 
-header .small-menu li {
-}
-
 /* 미디어쿼리 작성 768px 이하일 때*/
 @media (max-width: 768px) {
   header {
     height: 60px;
   }
 
+  header .click {
+    display: block;
+  }
+
   header .inner .menu {
     display: none;
   }
 
-  header .inner i {
+  header .inner .logo {
     font-size: 30px;
     left: 50%;
     transform: translate(-50%);
     line-height: 60px;
   }
 
-  header .small-menu {
+  header .inner .menu-bar {
+    color: #fff;
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    line-height: 60px;
+    right: 5vw;
+    cursor: pointer;
+  }
+
+  /* header .small-menu {
     display: block;
     background-color: aliceblue;
-  }
+  } */
 
   header .small-menu li {
     height: 40px;

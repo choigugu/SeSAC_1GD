@@ -13,7 +13,8 @@
   <body>
     <header>
       <div class="inner">
-        <i class="fa-solid fa-igloo"></i>
+        <i class="fa-solid fa-igloo logo"></i>
+        <i class="fa-solid fa-bars menu-bar"></i>
         <ul class="menu">
           <li>메뉴1</li>
           <li>메뉴2</li>
@@ -28,5 +29,12 @@
         <li>메뉴4</li>
       </ul>
     </header>
+    <script>
+      const bar = document.querySelector(".menu-bar");
+      const hideMenu = document.querySelector(".small-menu");
+      bar.addEventListener("click", () => {
+        hideMenu.classList.toggle("click");
+      });
+    </script>
   </body>
 </html>
